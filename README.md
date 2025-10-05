@@ -41,17 +41,18 @@ Your task is to containerize this existing application using Docker. You need to
 - To build the docker image run the command:
 
 ```bash
+docker build -t packaging-app
 
 ```
 
 - To run your docker container in port 3000 run the command:
 
 ```bash
-
+docker run -d -p 3000:3000 packaging app
 ```
 
 ## Reflection Question
-**Answer the following question in the space below**: How does containerization with Docker differ from using virtual machines, and why might a development team choose Docker containers over VMs for deploying applications like the one you just containerized?
+**Answer the following question in the space below**: How does containerization with Docker differ from using virtual machines, and why might a development team choose Docker containers over VMs for deploying applications like the one you just containerized? #docker containers differ from virtual machines because a machine uses a full advanced operating system with apps, this is slower and more dependent on resources. The docker uses containerization which shares the same host port. THis results in it being less resource dependent and faster.  Development teams would choose docker due to it running the same everywhere. This eliminates it only working on one device. Developers can also update faster which is very ideal in todays world. 
 
 
 
